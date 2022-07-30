@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = 'stylesheet' href = 'styles/general.css'>
+    <link rel = 'stylesheet' href = 'styles/home.css'>
+
+    <script src = 'helpers/scripts/base_functions.js' defer></script>
+    <script src = 'helpers/scripts/script.js' defer></script>
+</head>
+<body>
+    <div class = 'wrapper'>
+    <header class = 'bg p-rel'>
+        <nav class = 'full-w flex-row flex-between p-rel z-2'>
+            <!-- logo -->
+            <div class = 'logo'></div>
+
+            <!-- navigation -->
+            <div class = 'nav-links flex-row'>
+                <div class = 'nav-link'>LOG  IN</div>
+                <div class = 'nav-link'>SING UP</div>
+            </div>
+        </nav>
+
+        <div class = 'header-content flex-col flex-center text-center p-rel z-2 full-w'>
+            <!-- <small>Expressing yourself in</small> -->
+            <h1>EXPRESSING ART IN ITS PUREST FORM</h1>
+            <p>
+                Art is an expression of self, a window into 
+                the complex mind expressed simply, we would like 
+                you to share your art with the rest
+                of the world.
+            </p>
+            <div class = 'btn'>
+                Join Us
+            </div>
+        </div>
+
+        <div class = 'bg p-abs top-left full-hw z-1'>
+            <div class = 'img full-hw p-abs z-1'>
+                <img src = 'images/background.jpg' alt = 'website background image' class = 'obj-fit'>
+            </div>
+
+            <div class = 'overlay p-abs top-left full-hw z-2'></div>
+        </div>
+    </header>
+
+    <section class = 'p-rel'>
+        <div class = 'art-tabs flex-row'>
+            <div class = 'tab'>STORIES</div>
+            <div class = 'tab'>DRAMA</div>
+            <div class = 'tab'>POEMS</div>
+            <div class = 'tab'>COMICS</div>
+        </div>
+
+        <div class = 'art-works'>
+            <div class = 'art-card card'>
+                <!-- card image -->
+                <div class = 'img'>
+                    <img src = '{{card-image}}' alt = '{{image-alt}}' class = 'obj-fit'>
+                </div>
+                <!-- card contents -->
+                <div class = 'content'>
+                    <!-- card title -->
+                    <h4>{{card-title}}</h4>
+                    <!-- card description -->
+                    <p>
+                        {{card-description}}
+                    </p>
+                    <!-- card button -->
+                    <div class = 'card-btn'>{{button-text}}</div>
+                    <!-- card stars -->
+                    <div class = 'stars flex-row'>
+                        {{card-stars}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Copyright at xeftechnologies
+    </footer>
+
+    </div>
+    
+</body>
+</html>
