@@ -14,6 +14,107 @@
 </head>
 <body>
     <div class = 'wrapper'>
+        <div class="float">
+            <div class="item1"></div>
+        </div>
+        <div class="registration centered">
+            <div class="login centered">
+                <div class="base">
+                    <div class="content">
+                        <div class="title">
+                            <h3>Lorem, ipsum dolor.</h3>
+                        </div>
+
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum esse tenetur doloribus molestias. Laborum, dolorum quasi modi fuga corporis quae!</p>
+                        </div>
+
+                        <div class="link">
+                            <p>Learn More</p>
+                        </div>
+
+                    </div>
+                   
+
+                    <div class="form">
+                        <div class="options">
+                            <div class="opt active" onclick="toggle_items('.forms')">
+                                <h5>Log In</h5>
+                            </div>
+                            <div class="opt" onclick="toggle_items('.forms')">
+                                <h5>Sign Up</h5>
+                            </div>
+                        </div>
+
+                        <div class="forms">
+
+                        <form class="login_form active">
+                            <div class="form_element first">
+                                <div class="label">
+                                    <h5>Username or Email Address</h5>
+                                </div>
+                                <input type="text" placeholder="example@gmail.com">
+                            </div>
+
+                            <div class="form_element">
+                                <div class="label">
+                                    <h5>Password</h5>
+                                </div>
+                                <input type="text" placeholder="*************">
+                            </div>
+
+                            <div class="submit centered">
+                                <input type="submit" value="Login">
+                            </div>
+
+
+                        </form>
+
+                        <form class="signup_form">
+                           
+                            <div class="form_element first">
+                                <div class="label">
+                                    <h5>Full Name</h5>
+                                </div>
+                                <input type="text" placeholder="eg: Melvin Grace">
+                            </div>
+
+                            <div class="form_element first">
+                                <div class="label">
+                                    <h5>Username Or Email</h5>
+                                </div>
+                                <input type="text" placeholder="example@gmail.com">
+                            </div>
+
+                            <div class="form_element first">
+                                <div class="label">
+                                    <h5>Speciality</h5>
+                                </div>
+                                <input type="text" placeholder="poetry">
+                            </div>
+
+                            <div class="form_element">
+                                <div class="label">
+                                    <h5>Password</h5>
+                                </div>
+                                <input type="text" placeholder="*************">
+                            </div>
+
+                            <div class="submit centered">
+                                <input type="submit" value="Sign Up">
+                            </div>
+
+
+                        </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     <header class = 'bg p-rel'>
         <nav class = 'full-w flex-row flex-between p-rel z-2'>
             <!-- logo -->
@@ -21,7 +122,7 @@
 
             <!-- navigation -->
             <div class = 'nav-links flex-row'>
-                <div class = 'nav-link'>LOG  IN</div>
+                <div class = 'nav-link' onclick="toggle_items('.registration'); toggle_items('.base'); toggle_items('.float'); toggle_items('.item1');">LOG  IN</div>
                 <div class = 'nav-link'>SING UP</div>
             </div>
         </nav>
@@ -87,6 +188,13 @@
     </footer>
 
     </div>
+
+    <script>
+        function toggle_items(item_name){
+            element = document.querySelector(item_name);
+            element.classList.toggle("active");
+        }
+    </script>
     
 </body>
 </html>

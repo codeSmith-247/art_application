@@ -220,3 +220,344 @@ footer {
     }
     
 }
+
+
+/* registration */
+
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registration{
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin-top: 30%;
+    position: absolute;
+
+}
+
+.registration.active{
+    margin-top: 0;
+    background: linear-gradient(120deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.164));
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+   
+    
+}
+.login{
+    width: 100%;
+    height: 100%;
+
+}
+.registration .login .base{
+    height: 400px;
+    width: 0px;
+    background: url(../images/background.jpg), linear-gradient(85deg, rgba(255, 0, 0, 0.918),rgba(255, 0, 0, 0.918), rgba(4, 0, 255, 0.918)) ;
+    box-shadow: 0 0 20px 1px rgba(148, 0, 0, 0.267);
+    position: relative;
+     background-blend-mode: overlay;
+     transition: .4s ease-in-out;
+     opacity: 0;
+     transition-delay: 1s;
+    
+}
+
+.registration .login .base.active{
+    opacity: 1;
+    height: 400px;
+    width: calc(80% + 50px);
+    background: url(../images/background.jpg), linear-gradient(85deg, rgba(255, 0, 0, 0.918),rgba(255, 0, 0, 0.918), rgba(4, 0, 255, 0.918)) ;
+    box-shadow: 0 0 20px 1px rgba(148, 0, 0, 0.267);
+    position: relative;
+     background-blend-mode: overlay;
+}
+
+.form{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    color: white;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    background: rgb(10, 10, 10);
+    right: 10%;
+    top: calc(50% - 250px);
+    box-shadow: 0 0 10px 1px rgba(206, 206, 206, 0.267);
+    border-top-right-radius: 5px;
+}
+
+ 
+
+.options{
+     display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 50px;
+ }
+
+.options .opt{
+    margin-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rebeccapurple;
+
+ 
+      
+}
+.options .opt h5{
+    font-weight: 400;
+    font-size: 16px;
+}
+.opt.active{
+    font-weight: 900;
+    border-bottom: 1px solid red;
+}
+.opt_active h5{
+    font-weight: 900;
+ }
+form{
+    overflow: hidden;
+    
+}
+
+.label{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.form_element{
+    margin-top: 30px;
+    margin-left: calc(50% - 150px);
+}
+
+.form_element input{
+    background: transparent;
+    height: 40px;
+    width: 300px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    outline: none;
+
+    
+    
+ }
+.form_element .label h5{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.first{
+    margin-top: 80px;
+}
+
+.submit{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.submit input{
+    width: 70%;
+    border-radius: 25px;
+    height: 40px;
+    background: linear-gradient(85deg, rgba(255, 0, 0, 0.918),rgba(255, 0, 0, 0.918), rgba(4, 0, 255, 0.918)) ;;
+    border: none;
+    color: white;
+
+}
+
+
+.content{
+    height: 100%;
+    width: calc(30% + 50px);
+    padding: 20px;
+ }
+
+ .content .title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+ }
+
+ .content .text p{
+     font-weight: 100;
+ }
+
+ .content .link{
+    color: white;
+    margin-top: 50px;
+ }
+ 
+
+.signup_form{
+     overflow-y: auto;
+    height: 420px;
+}
+ 
+.forms{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+}
+
+ 
+.forms.active{
+     grid-template-columns: 0fr 1fr;
+}
+
+.float.active{
+     position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    animation-name: anime2;
+    animation-duration: 15s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: url(../images/books.png);
+    background-size: cover;
+    background-position: center;
+     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.555);
+
+}
+
+.item1.active{
+     position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: url(../images/paint.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes anime2 {
+    10%{
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.555);
+
+
+     }
+
+    25%{
+        top: 100px;
+        left: 400px;
+ 
+
+    }
+
+    55%{
+        top: 200px;
+        left: 300px;
+        box-shadow: 0 0 10px 4px rgba(153, 0, 255, 0.555);
+
+
+    }
+    80%{
+        top: 30px;
+        left: 20px;
+        box-shadow: 0 0 10px 4px rgba(0, 89, 255, 0.555);
+
+
+        
+    }
+
+    90%{
+        top: 400px;
+        left: 100px;
+ 
+    }
+    100%{
+        top: 650px;
+        left: 300px;
+        box-shadow: 0 0 10px 4px rgba(255, 0, 55, 0.555);
+
+
+    }
+
+   
+    
+    
+}
+
+@keyframes anime {
+    10%{
+        top: 69px;
+        left: 800px;
+    }
+    25%{
+        top: 30px;
+        left: 900px;
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.555);
+
+
+        
+    }
+
+    35%{
+        top: 100px;
+        left: 400px;
+
+    }
+
+    75%{
+        top: 200px;
+        left: 300px;
+        box-shadow: 0 0 10px 4px rgba(255, 0, 0, 0.555);
+
+
+    }
+
+    100%{
+        top: 400px;
+        left: 100px;
+        box-shadow: 0 0 10px 4px rgba(55, 0, 255, 0.555);
+
+    }
+    
+}
+
+ 
+
+
+
+
+@media (max-width: 1000px){
+  
+
+     .registration .login .base.active{
+        width: 100%;
+        height: 100%;
+        position: relative;
+         
+
+     }
+
+     .content{
+        display: none;
+     }
+     .form{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+     }
+
+     .float.active, .item1.active{
+        height: 50px;
+        width: 50px;
+     }
+
+}
